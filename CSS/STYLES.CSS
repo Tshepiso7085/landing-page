@@ -1,0 +1,148 @@
+body{
+    background-color: #eeeeee;
+    font-family: sans-serif,'lato';
+
+}
+#header{
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#header-img{
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+}
+#nav-bar{
+    font-weight: 400;
+    width:40vw;
+}
+.logo{
+    width: 60vw;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+.nav-link{
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#hero, #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero>h2{
+    color: rgb(88, 88, 88);
+}
+#hero input[type="email"]{
+    max-width: 275px;
+    width: 275px;
+    height: 15px;
+    margin-bottom: 15px;
+}
+#hero input[type="submit"]{
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(167, 164, 164);
+    border: none;
+    font-weight: 900;
+    font-size: 1em;
+}
+#features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1000px;
+    
+}
+.icon{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+}
+.fa-solid{
+    color: rgb(88, 88, 88);
+    font-size: 35px;
+}
+#brand_review{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+#Pricing{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top:60px ;
+    margin-bottom: 90px;
+    
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(80%/3);
+    border: 1px solid black;
+    margin:20px;
+    border-radius: 5px;
+}
+.level{
+    background-color: rgb(167, 164, 164);
+    color: black;
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 700;
+}
+ol > li{
+    margin-right: 25px;
+}
+.btn{
+    background-color:  rgb(167, 164, 164);
+    margin: 15px 0;
+    font-weight: 400;
+    border: none;
+    width: 30%;
+    height: 30px;
+    font-size: 1em;
+    min-width: 100px;
+}
+@media( max-width:500px){
+    #Pricing, #header, #features,#brandreview{
+        flex-direction:column;
+        align-items: center;
+    }
+    .product{
+        width: 300px;
+    }
+    .nav-link{
+        padding-left: 2em;
+    }
+}
